@@ -1,0 +1,83 @@
+@import "common";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.data {
+    display: flex;
+    gap: 8px;
+
+    #datetime-picker {
+        width: 272px;
+        height: 40px;
+        padding-left: 16px;
+        border-radius: 4px;
+        border: 1px solid #808080;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            border-color: #000;
+        }
+
+        &:active {
+            border-color: #4E75FF;
+        }
+    }
+
+    button[data-start] {
+        width: 75px;
+        height: 40px;
+
+        font: {
+            size: 16px;
+            weight: 500;
+        }
+
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        border-radius: 8px;
+        color: #fff;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: #4E75FF;
+
+        &:hover {
+            background-color: #6C8CFF;
+        }
+
+        &:disabled {
+            color: #989898;
+            background-color: #CFCFCF;
+        }
+    }
+}
+
+.timer {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .value {
+            font-size: 40px;
+            line-height: 1.2;
+            letter-spacing: 0.04em;
+            color: #2E2F42;
+        }
+
+        .label {
+            font-size: 16px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            color: #2E2F42;
+        }
+    }
+}
