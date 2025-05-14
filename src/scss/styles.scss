@@ -1,0 +1,17 @@
+@import "normalize";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}

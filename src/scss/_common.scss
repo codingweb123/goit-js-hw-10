@@ -1,0 +1,22 @@
+@import "normalize";
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2E2F42;
+    background-color: #fff;
+}
